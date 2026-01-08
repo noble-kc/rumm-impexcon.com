@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Rumm Impex Consultancy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta name="description" content="Rumm Impex Consultancy provides company setup services in Germany, UAE, and India. Expert guidance for business formation, compliance, and global expansion.">
+    <meta name="keywords" content="company setup Germany, UAE business setup, India company registration, Rumm Impex Consultancy, business formation, global expansion">
+    <meta name="author" content="Rumm Impex Consultancy">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Rumm Impex Consultancy">
+    <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India.">
+    <meta property="og:image" content="hero.jpg">
+    <meta property="og:url" content="https://rumm-impexcon.com">
+    <meta property="og:type" content="website">
+
+    <!-- Mobile + Browser Optimization -->
+    <meta name="theme-color" content="#0077cc">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Rumm Impex Consultancy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="section fade-in">
+        <h2>Contact Us</h2>
+
+        <p><strong>Rumm Impex Consultancy</strong></p>
+        <p>Gronauer Weg 37, 67125 Dannstadt, Germany</p>
+        <p>Email: info@rumm-impexcon.com</p>
+
+        <form action="submit-form.php" method="POST" class="contact-form">
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="text" name="phone">
+
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+<footer class="footer fade-in">
+    <p>© 2026 Rumm Impex Consultancy</p>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">🌐</a>
+        <a href="https://linkedin.com" target="_blank">🔗</a>
+        <a href="https://instagram.com" target="_blank">📸</a>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
