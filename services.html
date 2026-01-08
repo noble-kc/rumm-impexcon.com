@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – Rumm Impex Consultancy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Rumm Impex Consultancy provides company setup services in Germany, UAE, and India. Expert guidance for business formation, compliance, and global expansion.">
+    <meta name="keywords" content="company setup Germany, UAE business setup, India company registration, Rumm Impex Consultancy, business formation, global expansion">
+    <meta name="author" content="Rumm Impex Consultancy">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Rumm Impex Consultancy">
+    <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India.">
+    <meta property="og:image" content="hero.jpg">
+    <meta property="og:url" content="https://rumm-impexcon.com">
+    <meta property="og:type" content="website">
+
+    <!-- Mobile + Browser Optimization -->
+    <meta name="theme-color" content="#0077cc">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Rumm Impex Consultancy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="section fade-in">
+        <h2>Our Services</h2>
+
+        <div class="service-box">
+            <h3>🇩🇪 Company Setup in Germany</h3>
+            <ul>
+                <li>Legal structure guidance (GmbH, UG, etc.)</li>
+                <li>Company registration & documentation</li>
+                <li>Tax registration & compliance</li>
+                <li>Business bank account support</li>
+                <li>Local administrative assistance</li>
+            </ul>
+        </div>
+
+        <div class="service-box">
+            <h3>🇦🇪 Company Setup in UAE</h3>
+            <ul>
+                <li>Mainland, Free Zone & Offshore formation</li>
+                <li>Visa & residency processing</li>
+                <li>Corporate bank account support</li>
+                <li>Compliance & regulatory guidance</li>
+                <li>Business licensing & approvals</li>
+            </ul>
+            <p>
+                UAE Service Partner:  
+                <a href="https://ojstratex.com" target="_blank">OJ Stratex</a>
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🇮🇳 Company Setup in India</h3>
+            <ul>
+                <li>Private Limited & LLP registration</li>
+                <li>PAN, GST & compliance support</li>
+                <li>Banking assistance</li>
+                <li>Statutory filings</li>
+                <li>Local advisory for operations</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer fade-in">
+    <p>© 2026 Rumm Impex Consultancy</p>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">🌐</a>
+        <a href="https://linkedin.com" target="_blank">🔗</a>
+        <a href="https://instagram.com" target="_blank">📸</a>
+    </div>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
