@@ -54,7 +54,7 @@ h1, h2, h3 {
 /* HERO BANNER */
 .hero {
     height: 70vh;
-    background: url('hero.jpg') center/cover no-repeat;
+    background: url('./hero.png') center/cover no-repeat;
     position: relative;
 }
 
