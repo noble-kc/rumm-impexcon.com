@@ -1,111 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumm Impex Consultancy</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preload" as="image" href="hero.png">
-
-    <meta name="description" content="Rumm Impex Consultancy provides company setup services in Germany, UAE, and India. Expert guidance for business formation, compliance, and global expansion.">
-    <meta name="keywords" content="company setup Germany, UAE business setup, India company registration, Rumm Impex Consultancy, business formation, global expansion">
-    <meta name="author" content="Rumm Impex Consultancy">
-
-    <!-- Open Graph (Social Sharing) -->
-    <meta property="og:title" content="Rumm Impex Consultancy">
-    <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India.">
-    <meta property="og:image" content="hero.png">
-    <meta property="og:url" content="https://rumm-impexcon.com">
-    <meta property="og:type" content="website">
-
-    <!-- Mobile + Browser Optimization -->
-    <meta name="theme-color" content="#0077cc">
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Rumm Impex Consultancy",
-  "url": "https://rumm-impexcon.com",
-  "logo": "https://rumm-impexcon.com/favicon.ico",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Gronauer Weg 37",
-    "postalCode": "67125",
-    "addressLocality": "Dannstadt",
-    "addressCountry": "DE"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer service",
-    "email": "info@rumm-impexcon.com"
-  },
-  "sameAs": [
-    "https://facebook.com",
-    "https://linkedin.com",
-    "https://instagram.com"
-  ]
-}
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rumm Impex Consultancy – Global Business Setup Made Simple</title>
+  <meta name="description"
+    content="Global business setup specialists for Germany, UAE, and India. We simplify company formation, compliance, and operational setup across international markets." />
+  <meta property="og:title" content="Rumm Impex Consultancy" />
+  <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India." />
+  <meta property="og:image" content="images/hero_cover.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="logo">RUMM-IMPEXCON</div>
-        <ul class="nav-links">
-            <li><a href="index.html"><strong>Home</strong></a></li>
-            <li><a href="services.html"><strong>Services</strong></a></li>
-            <li><a href="contact.html"><strong>Contact Us</strong></a></li>
-        </ul>
-    </nav>
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/logo.png" alt="Rumm Impex Consultancy Logo" class="navbar__logo-img" />
+      <div class="navbar__logo-text">
+        Rumm
+        <span>Impex Consultancy</span>
+      </div>
+    </a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="navbar__cta">Contact Us</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="navbar__cta">Contact Us</a>
+  </div>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <div class="hero-overlay">
-            <h1>Global Business Setup Made Simple</h1>
-            <p>Germany • UAE • India</p>
-            <a href="services.html" class="btn">Explore Services</a>
-        </div>
-    </header>
-
-    <!-- ABOUT SECTION -->
-    <section class="section fade-in">
-        <h2>Welcome to Rumm Impex Consultancy</h2>
-        <p>
-            We help entrepreneurs and companies establish a strong presence in 
-            <strong>Germany, UAE, and India</strong>.
-            We combine local expertise with international insight to simplify company formation, compliance, and operational setup.
-Whether you're expanding into Europe, entering the Middle East, or launching in South Asia, we ensure your business starts on a solid foundation.
-            We simplify company formation, compliance, and operational setup across international markets.
-        </p>
-    </section>
-<footer class="footer fade-in">
-    <p>© 2026 Rumm Impex Consultancy</p>
-
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">f</a>
-        <a href="https://linkedin.com" target="_blank">In</a>
-        <a href="https://instagram.com" target="_blank">📸</a>
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__particles"></div>
+    <div class="hero__content">
+      <div class="hero__badge">Global Business Consultancy</div>
+      <h1 class="hero__title">
+        Global Business<br />Setup <span class="gold">Made Simple</span>
+      </h1>
+      <div class="hero__subtitle-flags">
+        <div class="flag-item">🇩🇪 Germany</div>
+        <div class="flag-item">🇦🇪 UAE</div>
+        <div class="flag-item">🇮🇳 India</div>
+      </div>
+      <p class="hero__desc">
+        We help entrepreneurs and companies establish a strong presence in Germany, UAE, and India — combining local
+        expertise with international insight.
+      </p>
+      <div class="hero__actions">
+        <a href="services.html" class="btn-primary">Explore Services</a>
+        <a href="contact.html" class="btn-outline">Get in Touch</a>
+      </div>
     </div>
-</footer>
+    <div class="hero__stats">
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Countries Covered</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Compliance Focus</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">360°</span>
+        <span class="stat-label">Business Support</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">EU</span>
+        <span class="stat-label">Registered Firm</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <svg viewBox="0 0 24 24">
+        <path d="M7 10l5 5 5-5z" />
+      </svg>
+      Scroll
+    </div>
+  </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".fade-in");
+  <!-- ── ABOUT / WELCOME ── -->
+  <section class="about reveal">
+    <div class="section-container">
+      <div class="about__inner">
+        <div class="about__image-wrap">
+          <img src="images/about_section.png" alt="Our global consulting team" loading="lazy" />
+          <div class="about__image-overlay"></div>
+          <div class="about__image-badge">✦ Your Trusted Global Partner</div>
+        </div>
+        <div class="about__text">
+          <span class="section-label">Welcome to Rumm Impex</span>
+          <div class="gold-divider"></div>
+          <h2 class="section-title">Your Bridge to Global<br />Business Success</h2>
+          <p class="section-desc">
+            We combine local expertise with international insight to simplify company formation, compliance, and
+            operational setup. Whether you're expanding into Europe, entering the Middle East, or launching in South
+            Asia — we ensure your business starts on a solid foundation.
+          </p>
+          <div class="about__features">
+            <div class="feature-item">
+              <div class="feature-icon">🌐</div>
+              <div>
+                <h4>International Reach</h4>
+                <p>Offices and partners across Germany, UAE, and India for true on-ground support.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⚖️</div>
+              <div>
+                <h4>Legal &amp; Compliance</h4>
+                <p>Expert guidance on local regulations, tax compliance, and corporate law requirements.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🚀</div>
+              <div>
+                <h4>Fast-Track Setup</h4>
+                <p>Streamlined processes to get your business operational as quickly as possible.</p>
+              </div>
+            </div>
+          </div>
+          <a href="services.html" class="btn-primary">View All Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    }, { threshold: 0.2 });
+  <!-- ── SERVICES PREVIEW ── -->
+  <section class="services-preview reveal">
+    <div class="section-container">
+      <div class="services-preview__header">
+        <span class="section-label">What We Offer</span>
+        <div class="gold-divider" style="margin: 0 auto 20px;"></div>
+        <h2 class="section-title">Company Setup Across Three Markets</h2>
+        <p class="section-desc">Comprehensive end-to-end company formation, registration, banking, and compliance
+          services across key global markets.</p>
+      </div>
+      <div class="services-preview__grid">
 
-    elements.forEach(el => observer.observe(el));
-});
-</script>
+        <!-- Germany -->
+        <a href="services.html#germany" class="service-card">
+          <div class="service-card__image-wrap">
+            <img src="images/germany_service.png" alt="Company Setup in Germany" class="service-card__image"
+              loading="lazy" />
+            <div class="service-card__image-overlay"></div>
+            <div class="service-card__flag">🇩🇪</div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__country">Europe · Germany</div>
+            <h3 class="service-card__title">Company Setup in Germany</h3>
+            <ul class="service-card__list">
+              <li>GmbH, UG &amp; legal structure guidance</li>
+              <li>Company registration &amp; documentation</li>
+              <li>Tax registration &amp; compliance</li>
+              <li>Business bank account support</li>
+            </ul>
+            <div class="service-card__link">
+              Learn More
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- UAE -->
+        <a href="services.html#uae" class="service-card">
+          <div class="service-card__image-wrap">
+            <img src="images/uae_service.png" alt="Company Setup in UAE" class="service-card__image" loading="lazy" />
+            <div class="service-card__image-overlay"></div>
+            <div class="service-card__flag">🇦🇪</div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__country">Middle East · UAE</div>
+            <h3 class="service-card__title">Company Setup in UAE</h3>
+            <ul class="service-card__list">
+              <li>Mainland, Free Zone &amp; Offshore formation</li>
+              <li>Visa &amp; residency processing</li>
+              <li>Corporate bank account support</li>
+              <li>Business licensing &amp; approvals</li>
+            </ul>
+            <div class="service-card__link">
+              Learn More
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- India -->
+        <a href="services.html#india" class="service-card">
+          <div class="service-card__image-wrap">
+            <img src="images/india_service.png" alt="Company Setup in India" class="service-card__image"
+              loading="lazy" />
+            <div class="service-card__image-overlay"></div>
+            <div class="service-card__flag">🇮🇳</div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__country">South Asia · India</div>
+            <h3 class="service-card__title">Company Setup in India</h3>
+            <ul class="service-card__list">
+              <li>Private Limited &amp; LLP registration</li>
+              <li>PAN, GST &amp; compliance support</li>
+              <li>Banking assistance</li>
+              <li>Statutory filings &amp; advisory</li>
+            </ul>
+            <div class="service-card__link">
+              Learn More
+              <svg viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ── -->
+  <div class="cta-banner reveal">
+    <div class="section-container" style="max-width:800px; margin:0 auto;">
+      <h2 class="cta-banner__title">Ready to Take Your Business Global?</h2>
+      <p class="cta-banner__desc">Schedule a free consultation and let our experts guide you through the entire setup
+        process — from legal structure to first operations.</p>
+      <div class="cta-banner__actions">
+        <a href="contact.html" class="btn-primary">Start Your Journey</a>
+        <a href="services.html" class="btn-outline">See All Services</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__brand-logo">
+          <img src="images/logo.png" alt="Rumm Impex Consultancy Logo" class="navbar__logo-img" />
+          <span class="footer__brand-title">Rumm Impex Consultancy</span>
+        </a>
+        <p class="footer__brand-desc">Global business setup specialists for Germany, UAE, and India. We simplify company
+          formation, compliance, and operational setup across international markets.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank">f</a>
+          <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank">in</a>
+          <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank">📸</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Markets</h4>
+        <ul>
+          <li><a href="services.html#germany">🇩🇪 Germany</a></li>
+          <li><a href="services.html#uae">🇦🇪 UAE</a></li>
+          <li><a href="services.html#india">🇮🇳 India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">© 2026 Rumm Impex Consultancy. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }));
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+  </script>
 </body>
+
 </html>

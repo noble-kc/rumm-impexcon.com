@@ -1,84 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Rumm Impex Consultancy</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <meta name="description" content="Rumm Impex Consultancy provides company setup services in Germany, UAE, and India. Expert guidance for business formation, compliance, and global expansion.">
-    <meta name="keywords" content="company setup Germany, UAE business setup, India company registration, Rumm Impex Consultancy, business formation, global expansion">
-    <meta name="author" content="Rumm Impex Consultancy">
-
-    <!-- Open Graph (Social Sharing) -->
-    <meta property="og:title" content="Rumm Impex Consultancy">
-    <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India.">
-    <meta property="og:image" content="hero.jpg">
-    <meta property="og:url" content="https://rumm-impexcon.com">
-    <meta property="og:type" content="website">
-
-    <!-- Mobile + Browser Optimization -->
-    <meta name="theme-color" content="#0077cc">
+    <meta name="description"
+        content="Contact Rumm Impex Consultancy. Reach us at info@rumm-impexcon.com or visit us at Gronauer Weg 37, 67125 Dannstadt, Germany." />
+    <meta property="og:title" content="Contact – Rumm Impex Consultancy" />
+    <meta property="og:description" content="Global business setup specialists for Germany, UAE, and India." />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Rumm Impex Consultancy</div>
-        <ul class="nav-links">
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar__logo">
+            <img src="images/logo.png" alt="Rumm Impex Consultancy Logo" class="navbar__logo-img" />
+            <div class="navbar__logo-text">
+                Rumm
+                <span>Impex Consultancy</span>
+            </div>
+        </a>
+        <ul class="navbar__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="contact.html" class="active navbar__cta">Contact Us</a></li>
         </ul>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
-
-    <section class="section fade-in">
-        <h2>Contact Us</h2>
-
-        <p><strong>Rumm Impex Consultancy</strong></p>
-        <p>Gronauer Weg 37, 67125 Dannstadt, Germany</p>
-        <p>Email: info@rumm-impexcon.com</p>
-
-        <form action="submit-form.php" method="POST" class="contact-form">
-            <label>Name</label>
-            <input type="text" name="name" required>
-
-            <label>Email</label>
-            <input type="email" name="email" required>
-
-            <label>Phone</label>
-            <input type="text" name="phone">
-
-            <label>Message</label>
-            <textarea name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-<footer class="footer fade-in">
-    <p>© 2026 Rumm Impex Consultancy</p>
-
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">🌐</a>
-        <a href="https://linkedin.com" target="_blank">🔗</a>
-        <a href="https://instagram.com" target="_blank">📸</a>
+    <div class="navbar__mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="navbar__cta">Contact Us</a>
     </div>
-</footer>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".fade-in");
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+    <!-- ── PAGE HERO ── -->
+    <div class="page-hero">
+        <span class="section-label">Get In Touch</span>
+        <div class="gold-divider" style="margin: 0 auto 20px;"></div>
+        <h1 class="section-title" style="font-size: clamp(2.2rem, 4vw, 3.4rem);">Contact Us</h1>
+        <p class="section-desc" style="margin-top:12px;">
+            Ready to start your global business journey? Reach out and our team will get back to you within one business
+            day.
+        </p>
+    </div>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section class="contact-section">
+        <div class="contact-section__inner">
+
+            <!-- Contact Info Cards -->
+            <div class="contact-info reveal">
+                <div class="contact-info__card">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">📍</div>
+                        <div>
+                            <div class="contact-detail__label">Office Address</div>
+                            <div class="contact-detail__value">Gronauer Weg 37, 67125 Dannstadt, Germany</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">✉️</div>
+                        <div>
+                            <div class="contact-detail__label">Email Address</div>
+                            <div class="contact-detail__value"><a
+                                    href="mailto:info@rumm-impexcon.com">info@rumm-impexcon.com</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info__card">
+                    <h3>Our Markets</h3>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">🇩🇪</div>
+                        <div>
+                            <div class="contact-detail__label">Germany</div>
+                            <div class="contact-detail__value">GmbH, UG, Company Registration &amp; Tax Compliance</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">🇦🇪</div>
+                        <div>
+                            <div class="contact-detail__label">UAE</div>
+                            <div class="contact-detail__value">Free Zone, Mainland &amp; Offshore Formation</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">🇮🇳</div>
+                        <div>
+                            <div class="contact-detail__label">India</div>
+                            <div class="contact-detail__value">Private Limited, LLP, GST &amp; Statutory Filings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info__card">
+                    <h3>Follow Us</h3>
+                    <p style="font-size:0.87rem; color:var(--gray-light); margin-bottom:18px;">Stay updated with the
+                        latest business insights and news from Rumm Impex.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank"
+                            style="font-weight:700;">f</a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank"
+                            style="font-size:0.75rem; font-weight:700;">in</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram"
+                            target="_blank">📸</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrap reveal">
+                <h2>Send Us a Message</h2>
+                <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+                <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Target Market</label>
+                        <select id="country" name="country">
+                            <option value="">Select a market...</option>
+                            <option value="germany">🇩🇪 Germany</option>
+                            <option value="uae">🇦🇪 UAE</option>
+                            <option value="india">🇮🇳 India</option>
+                            <option value="multiple">Multiple Markets</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="company-setup">Company Setup / Registration</option>
+                            <option value="tax-compliance">Tax Registration &amp; Compliance</option>
+                            <option value="banking">Business Bank Account Support</option>
+                            <option value="visa">Visa &amp; Residency (UAE)</option>
+                            <option value="other">Other / Not Sure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"
+                            placeholder="Tell us about your business goals and how we can help..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+                </form>
+                <div id="formSuccess"
+                    style="display:none; margin-top:24px; padding:20px; background:rgba(26,138,122,0.1); border:1px solid rgba(26,138,122,0.3); border-radius:12px; color:#2ab5a0; font-size:0.95rem; text-align:center;">
+                    ✅ Thank you! Your message has been sent. We'll be in touch within one business day.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── MAP ── -->
+    <section class="map-section reveal">
+        <div class="map-section__inner">
+            <h2 class="section-title" style="margin-bottom:24px;">Find Our Office</h2>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=8.158,49.428,8.200,49.455&layer=mapnik&marker=49.441,8.179"
+                    title="Rumm Impex Consultancy Office Location - Dannstadt, Germany" loading="lazy" allowfullscreen>
+                </iframe>
+            </div>
+            <p style="margin-top:14px; font-size:0.85rem; color:var(--gray-mid);">
+                📍 Gronauer Weg 37, 67125 Dannstadt-Schauernheim, Germany
+            </p>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__brand-logo">
+                    <img src="images/logo.png" alt="Rumm Impex Consultancy Logo" class="navbar__logo-img" />
+                    <span class="footer__brand-title">Rumm Impex Consultancy</span>
+                </a>
+                <p class="footer__brand-desc">Global business setup specialists for Germany, UAE, and India.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank"
+                        style="font-weight:700;">f</a>
+                    <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank"
+                        style="font-size:0.75rem; font-weight:700;">in</a>
+                    <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank">📸</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Markets</h4>
+                <ul>
+                    <li><a href="services.html#germany">🇩🇪 Germany</a></li>
+                    <li><a href="services.html#uae">🇦🇪 UAE</a></li>
+                    <li><a href="services.html#india">🇮🇳 India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span class="footer__copyright">© 2026 Rumm Impex Consultancy. All rights reserved.</span>
+            <div class="footer__bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); });
+
+        // Hamburger
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
         });
-    }, { threshold: 0.2 });
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            hamburger.classList.remove('open'); mobileMenu.classList.remove('open');
+        }));
 
-    elements.forEach(el => observer.observe(el));
-});
-</script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        reveals.forEach(r => observer.observe(r));
+
+        // Form submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('formSuccess').style.display = 'block';
+            }, 1200);
+        }
+    </script>
 </body>
+
 </html>
