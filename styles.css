@@ -581,7 +581,6 @@ section {
   color: var(--text-secondary);
    line-height: 1.75;
   max-width: 600px;
-  padding: 5px 5px;
 }
 
 /* Divider */
@@ -1629,6 +1628,7 @@ section {
   }
 
 }
+
 
 
 
