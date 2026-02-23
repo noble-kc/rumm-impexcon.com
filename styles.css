@@ -563,8 +563,18 @@ section {
   letter-spacing: 0.14em;
   color: var(--impex-green);
   font-weight: 700;
-  margin-bottom: 5px;
-   position: absolute;
+  position: relative;
+  padding-bottom: 6px;
+}
+.section-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* matches text width */
+  height: 3px;
+  background: var(--divider-green);
+  border-radius: 2px;
 }
 
 .section-title {
@@ -1630,6 +1640,7 @@ section {
   }
 
 }
+
 
 
 
