@@ -590,7 +590,7 @@ section {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%; /* matches text width */
+  width: 50%; /* matches text width */
   height: 3px;
   background: var(--divider-green);
   border-radius: 2px;
@@ -1631,6 +1631,7 @@ section {
   }
 
 }
+
 
 
 
