@@ -564,6 +564,7 @@ section {
   color: var(--impex-green);
   font-weight: 700;
   margin-bottom: 5px;
+   position: absolute;
 }
 
 .section-title {
@@ -589,7 +590,8 @@ section {
   background: var(--divider-green);
    height: 3px;
   border-radius: 2px;
-  margin: 5px 20px;
+  margin: 5px;
+   position: absolute;
 }
 
 /* ──────────────────────────────────────────────
@@ -1628,6 +1630,7 @@ section {
   }
 
 }
+
 
 
 
