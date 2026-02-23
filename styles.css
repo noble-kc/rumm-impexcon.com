@@ -1557,6 +1557,9 @@ section {
   }
 
   .hero__stats {
+     display: flex;
+     align-items: flex-start;
+     padding-top: 20px;
     padding-left: 20px;
   }
 
@@ -1609,6 +1612,13 @@ section {
     padding: 70px 5%;
   }
 
+.hero__stats {
+     display: flex;
+     align-items: flex-start;
+     padding-top: 20px;
+    padding-left: 20px;
+  }
+   
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -1631,6 +1641,7 @@ section {
   }
 
 }
+
 
 
 
