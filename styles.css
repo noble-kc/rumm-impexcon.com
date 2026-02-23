@@ -558,7 +558,7 @@ section {
 
 .section-label {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--impex-green);
@@ -590,7 +590,7 @@ section {
   background: var(--divider-green);
    height: 3px;
   border-radius: 2px;
-  margin-bottom: 20px;
+  margin: 5px 20px;
 }
 
 /* ──────────────────────────────────────────────
@@ -1629,6 +1629,7 @@ section {
   }
 
 }
+
 
 
 
