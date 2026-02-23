@@ -311,7 +311,7 @@ body {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('./hero_cover.png');
+  background-image: url('hero_cover.png');
   background-size: cover;
   background-position: center;
   filter: brightness(0.38) saturate(0.7);
@@ -1627,3 +1627,4 @@ section {
   }
 
 }
+
