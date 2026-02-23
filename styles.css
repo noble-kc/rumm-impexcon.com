@@ -580,13 +580,12 @@ section {
   font-size: 1.05rem;
   color: var(--text-secondary);
   max-width: 600px;
-  line-height: 1.75;
+  padding: 5px 5px;
 }
 
 /* Divider */
 .gold-divider {
   width: 56px;
-  height: 3px;
   background: var(--divider-green);
   border-radius: 2px;
   margin-bottom: 20px;
@@ -1628,5 +1627,6 @@ section {
   }
 
 }
+
 
 
