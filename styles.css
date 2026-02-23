@@ -566,16 +566,6 @@ section {
   position: relative;
   padding-bottom: 6px;
 }
-.section-label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%; /* matches text width */
-  height: 3px;
-  background: var(--divider-green);
-  border-radius: 2px;
-}
 
 .section-title {
   font-family: 'Montserrat', sans-serif;
@@ -595,15 +585,16 @@ section {
 }
 
 /* Divider */
-.gold-divider {
-  width: 56px;
+.section-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* matches text width */
+  height: 3px;
   background: var(--divider-green);
-   height: 3px;
   border-radius: 2px;
-  margin: 5px;
-   position: absolute;
 }
-
 /* ──────────────────────────────────────────────
    ABOUT / WELCOME SECTION
 ────────────────────────────────────────────── */
@@ -1640,6 +1631,7 @@ section {
   }
 
 }
+
 
 
 
