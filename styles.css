@@ -424,6 +424,7 @@ body {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+   padding-top: 30px;
   animation: fadeInUp 1s 0.4s ease both;
 }
 
@@ -1557,6 +1558,10 @@ section {
   section {
     padding: 70px 5%;
   }
+
+.hero__actions {
+   padding-top: 50px;
+}
    
   .form-row {
     grid-template-columns: 1fr;
@@ -1580,6 +1585,7 @@ section {
   }
 
 }
+
 
 
 
